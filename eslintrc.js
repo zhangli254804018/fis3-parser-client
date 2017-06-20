@@ -30,7 +30,7 @@ globals.forEach(function(key) {
 
 module.exports = {
     "parser": "babel-eslint",
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
+    // "extends": ["eslint:recommended", "plugin:react/recommended"],
     "globals": globalsTrue,
     "env": {
         "browser": true,
@@ -53,6 +53,9 @@ module.exports = {
         "no-unused-vars": "off",
         "linebreak-style": 0,
         "quotes": "off",
-        "semi": "off"
+        "semi": "off",
+        "no-undef": "off",
+        "no-extra-semi": "off",
+        "no-empty": "off"
     }
 };
