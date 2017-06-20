@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+ssh://git@github.com/zhangli254804018/fis3-client.git"
+        "url": "https://github.com/zhangli254804018/fis3-parser-client"
     },
     "dependencies": {
         "autoprefixer": "^6.3.6",
