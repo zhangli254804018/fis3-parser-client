@@ -1,0 +1,56 @@
+{
+    "name": "fis3-parser-client",
+    "version": "1.1.1",
+    "description": "Mr. Zhang, Packaged web front-end architecture for PC terminals and so on.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/zhangli254804018/fis3-client.git"
+    },
+    "dependencies": {
+        "autoprefixer": "^6.3.6",
+        "babel-eslint": "^7.1.0",
+        "babel-plugin-transform-function-bind": "^6.8.0",
+        "babel-plugin-transform-object-assign": "^6.8.0",
+        "babel-plugin-transform-regenerator": "^6.16.1",
+        "babel-plugin-transform-runtime": "^6.15.0",
+        "babel-preset-env": "^1.4.0",
+        "babel-preset-react": "^6.11.1",
+        "babel-preset-stage-1": "^6.22.0",
+        "babel-runtime": "^6.23.0",
+        "babelify": "^7.3.0",
+        "browserify": "^14.4.0",
+        "browserify-banner": "^1.0.3",
+        "browserify-incremental": "^3.1.1",
+        "cssnano": "^3.10.0",
+        "deasync": "^0.1.7",
+        "derequire": "^2.0.6",
+        "eslint-plugin-babel": "^3.3.0",
+        "eslint-plugin-react": "^6.7.1",
+        "eslintify": "^3.1.0",
+        "less": "^2.7.1",
+        "partialify": "^3.1.6",
+        "postcss": "^5.0.21",
+        "postcss-less": "^0.12.0",
+        "postcss-modules": "^0.5.0",
+        "postcss-safe-parser": "^2.0.0",
+        "postcss-sorting": "^1.7.0",
+        "shimixify": "^1.1.5",
+        "through2": "^2.0.0",
+        "bundle-collapser": "^1.2.1",
+        "vueify": "^8.5.2"
+    },
+    "keywords": [
+        "pc",
+        "terminals"
+    ],
+    "author": "li.zhang",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zhangli254804018/fis3-client/issues"
+    },
+    "homepage": "https://github.com/zhangli254804018/fis3-client#readme"
+}
