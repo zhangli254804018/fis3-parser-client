@@ -54,7 +54,8 @@ module.exports = function(content, file, conf) {
             expose: null,
             requires: null,
             umd: undefined,
-            externalRequireName: 'require'
+            externalRequireName: 'require',
+            ie: undefined
         },
         _ = fis.util,
         project = fis.project;
@@ -154,23 +155,25 @@ module.exports = function(content, file, conf) {
     });
 
     // 编译 es6 &&  react
-    b.transform(babelify, {
-        presets: [
-            react, [env, {
-                targets: {
-                    browsers: ['last 2 versions', 'safari > 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
-                }
-            }],
-            stage1
-        ],
-        plugins: [
-            transformRegenerator,
-            transformRuntime,
-            transformFunctionBind,
-            transformObjectAssign
-        ],
-        extensions: ['.es6', '.jsx', '.js']
-    });
+    if (!option.ie) {
+        b.transform(babelify, {
+            presets: [
+                react, [env, {
+                    targets: {
+                        browsers: ['last 2 versions', 'safari > 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']
+                    }
+                }],
+                stage1
+            ],
+            plugins: [
+                transformRegenerator,
+                transformRuntime,
+                transformFunctionBind,
+                transformObjectAssign
+            ],
+            extensions: ['.es6', '.jsx', '.js']
+        });
+    };
 
     b.transform(vueify);
 

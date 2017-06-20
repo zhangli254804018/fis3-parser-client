@@ -62,7 +62,8 @@ fis.match('app.js',{
       ],
       externals: ['react', 'reactDOM', 'vue'], //申明外部模块, 不打包入app.js
       externalRequireName: 'req', // 外部引用模块方法名, 默认: require 设置为req后 require 外部模块:  var $ = req('jQuery');
-      umd: 'app'  // 默认undfined ,  设置名字后 .umd打包  单独引用的时候, 可以访问 window.app 
+      umd: 'app' , // 默认undfined ,  设置名字后 .umd打包  单独引用的时候, 可以访问 window.app 
+      ie:false // 新增兼容低版本瀏覽器 不開啟兼容ie模式 ,開啟為true
     }
   })
 });
